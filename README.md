@@ -283,5 +283,5 @@ mpesa
 | Name                                               | Role        |
 | -------------------------------------------------- | ----------- |
 | [Newton Munene](https://github.com/newtonmunene99) | Contributor |
-| [A Oyoolo](https://github.com/oyoolo)              | Contributor |
+| [Aubrey O](https://github.com/au6rey)              | Contributor |
 
