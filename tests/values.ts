@@ -1,0 +1,10 @@
+export const ConsumerKey = Deno.env.get("CONSUMER_KEY")!;
+export const ConsumerSecret = Deno.env.get("CONSUMER_SECRET")!;
+export const PassKey = Deno.env.get("LIPA_NA_MPESA_PASSKEY")!;
+export const ShortCode = parseInt(Deno.env.get("LIPA_NA_MPESA_SHORTCODE")!);
+export const Initiator = Deno.env.get("INITIATOR_NAME")!;
+export const InitiatorPassword = Deno.env.get("INITIATOR_PASSWORD")!;
+export const PhoneNumber = Deno.env.get("PHONE_NUMBER")!;
+export const AccountReference = Deno.env.get("ACCOUNT_REFERENCE")!;
+export const CallBackURL = Deno.env.get("CALLBACK_URL")!;
+export const SecurityCred = Deno.env.get("SECURITY_CREDENTIAL")!;
