@@ -1,6 +1,6 @@
 # Mpesa-Deno
 
-:zap: :bomb: :fire: :fire: :bomb: :zap:
+
 A Deno module for M-Pesa Daraja API calls.
 
 Ready to use:
