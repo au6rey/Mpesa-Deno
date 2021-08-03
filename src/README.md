@@ -76,7 +76,7 @@ Lipa na M-Pesa Online Payment API is used to initiate a M-Pesa transaction on be
 
 ```javascript
 mpesa
-  .lipaNaMpesaOnline({
+  .lnmOnline({
     BusinessShortCode: 123456,
     Amount: 1000 /* 1000 is an example amount */,
     PartyA: "Party A",
@@ -114,7 +114,7 @@ mpesa
 
 ```javascript
 mpesa
-  .lipaNaMpesaQuery({
+  .lnmQuery({
     BusinessShortCode: 123456,
     CheckoutRequestID: "Checkout Request ID",
     passKey: "Lipa Na Mpesa Pass Key",
