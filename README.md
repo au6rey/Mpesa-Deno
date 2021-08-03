@@ -55,12 +55,12 @@ mpesa
     ResponseType: "Response Type",
   })
   .then((response) => {
-    //Do something with the response
+    //Use response here
     //eg
     console.log(response);
   })
   .catch((error) => {
-    //Do something with the error;
+    //If an error occurs, handle it here;
     //eg
     console.error(error);
   });
@@ -76,7 +76,7 @@ Lipa na M-Pesa Online Payment API is used to initiate a M-Pesa transaction on be
 
 ```javascript
 mpesa
-  .lipaNaMpesaOnline({
+  .lnmOnline({
     BusinessShortCode: 123456,
     Amount: 1000 /* 1000 is an example amount */,
     PartyA: "Party A",
@@ -88,12 +88,12 @@ mpesa
     TransactionDesc: "Transaction Description" /* OPTIONAL */,
   })
   .then((response) => {
-    //Do something with the response
+    //Use response here
     //eg
     console.log(response);
   })
   .catch((error) => {
-    //Do something with the error;
+    //If an error occurs, handle it here;
     //eg
     console.error(error);
   });
@@ -114,18 +114,18 @@ mpesa
 
 ```javascript
 mpesa
-  .lipaNaMpesaQuery({
+  .lnmQuery({
     BusinessShortCode: 123456,
     CheckoutRequestID: "Checkout Request ID",
     passKey: "Lipa Na Mpesa Pass Key",
   })
   .then((response) => {
-    //Do something with the response
+    //Use response here
     //eg
     console.log(response);
   })
   .catch((error) => {
-    //Do something with the error;
+    //If an error occurs, handle it here;
     //eg
     console.error(error);
   });
@@ -147,12 +147,12 @@ mpesa
     BillRefNumber: "Bill Reference Number" /* OPTIONAL */,
   })
   .then((response) => {
-    //Do something with the response
+    //Use response here
     //eg
     console.log(response);
   })
   .catch((error) => {
-    //Do something with the error;
+    //If an error occurs, handle it here;
     //eg
     console.error(error);
   });
@@ -180,12 +180,12 @@ mpesa
     Remarks: "Remarks" /* OPTIONAL */,
   })
   .then((response) => {
-    //Do something with the response
+    //Use response here
     //eg
     console.log(response);
   })
   .catch((error) => {
-    //Do something with the error;
+    //If an error occurs, handle it here;
     //eg
     console.error(error);
   });
@@ -222,7 +222,7 @@ mpesa
     console.log(response);
   })
   .catch((error) => {
-    //Do something with the error;
+    //If an error occurs, handle it here;
     //eg
     console.error(error);
   });
@@ -263,7 +263,7 @@ mpesa
     console.log(response);
   })
   .catch((error) => {
-    //Do something with the error;
+    //If an error occurs, handle it here;
     //eg
     console.error(error);
   });

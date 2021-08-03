@@ -26,7 +26,6 @@ import { encode as base64 } from "https://deno.land/std@0.82.0/encoding/base64.t
 
 export class Mpesa {
   private http: HttpService;
-  // private environment: string; //Used to generate security cred.
   private clientKey: string;
   private clientSecret: string;
   private securityCredential!: string;
@@ -36,17 +35,16 @@ export class Mpesa {
       clientKey,
       clientSecret,
       securityCredential,
-    }: //To be implemented.
-    // initiatorPassword,
-    // certificatePath,
-    CredentialsInterface,
+      initiatorPassword,
+      certificatePath,
+    }:
+      CredentialsInterface,
     environment: "production" | "sandbox"
   ) {
     this.clientKey = clientKey;
     this.clientSecret = clientSecret;
     this.http = new HttpService({
-      baseURL:
-        environment === "production" ? routes.production : routes.sandbox,
+      baseURL: environment === "production" ? routes.production : routes.sandbox,
       headers: { "Content-Type": "application/json" },
     });
     this.securityCredential = securityCredential;
@@ -75,6 +73,8 @@ export class Mpesa {
   //   certificatePath: string | null | undefined
   // ) {
   // }
+
+
 
   private async authenticate(): Promise<string> {
     const headers = {
@@ -307,7 +307,7 @@ export class Mpesa {
    * @param {any} data.passKey Lipa Na Mpesa Pass Key
    * @returns {Promise} Returns a Promise with data from Safaricom if successful
    */
-  public async lipaNaMpesaOnline({
+  public async lnmOnline({
     BusinessShortCode,
     passKey,
     TransactionDesc,
@@ -363,7 +363,7 @@ export class Mpesa {
    * @param {any} data.passKey Lipa Na Mpesa Pass Key
    * @returns {Promise} Returns a Promise with data from Safaricom if successful
    */
-  public async lipaNaMpesaQuery({
+  public async lnmQuery({
     BusinessShortCode,
     passKey,
     CheckoutRequestID,

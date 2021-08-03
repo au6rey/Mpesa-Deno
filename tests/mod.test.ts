@@ -59,7 +59,7 @@ Deno.test(
     };
 
     const response: void | StkPushResponseInterface = await mpesa
-      .lipaNaMpesaOnline(input)
+      .lnmOnline(input)
       .catch((err) => console.error(err));
     if (response) {
       assertExists(response.ResponseCode);
@@ -228,7 +228,7 @@ Deno.test(
     };
 
     const response = await mpesa
-      .lipaNaMpesaQuery(input)
+      .lnmQuery(input)
       .catch((err) => console.error(err));
     if (response) assertExists(response.ResponseCode);
     else throw new Error("No response for Online Query");
